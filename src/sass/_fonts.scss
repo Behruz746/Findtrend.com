@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Inter-medium';
+    src: url('../fonts/inter_font/Inter-Medium.eot');
+    src: local('Inter Medium'), local('Inter-Medium'),
+        url('../fonts/inter_font/Inter-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/inter_font/Inter-Medium.woff2') format('woff2'),
+        url('../fonts/inter_font/Inter-Medium.woff') format('woff'),
+        url('../fonts/inter_font/Inter-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter-bold';
+    src: url('../fonts/inter_font/Inter-Bold.eot');
+    src: local('Inter Bold'), local('Inter-Bold'),
+        url('../fonts/inter_font/Inter-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/inter_font/Inter-Bold.woff2') format('woff2'),
+        url('../fonts/inter_font/Inter-Bold.woff') format('woff'),
+        url('../fonts/inter_font/Inter-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Effra-bold';
+    src: url('../fonts/effra_font/Effra-Bold.eot');
+    src: local('Effra Bold'), local('Effra-Bold'),
+        url('../fonts/effra_font/Effra-Bold.eot') format('embedded-opentype'),
+        url('../fonts/effra_font/Effra-Bold.woff2') format('woff2'),
+        url('../fonts/effra_font/Effra-Bold.woff') format('woff'),
+        url('../fonts/effra_font/Effra-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Effra-heavy';
+    src: url('../fonts/effra_font/Effra-Heavy.eot');
+    src: local('Effra Heavy'), local('Effra-Heavy'),
+        url('../fonts/effra_font/Effra-Heavy.eot') format('embedded-opentype'),
+        url('../fonts/effra_font/Effra-Bold.woff2') format('woff2'),
+        url('../fonts/effra_font/Effra-Bold.woff') format('woff'),
+        url('../fonts/effra_font/Effra-Heavy.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Effra-medium';
+    src: url('../fonts/effra_font/Effra-Medium.eot');
+    src: local('Effra Medium'), local('Effra-Medium'),
+        url('../fonts/effra_font/Effra-Medium.eot') format('embedded-opentype'),
+        url('../fonts/effra_font/Effra-Medium.woff2') format('woff2'),
+        url('../fonts/effra_font/Effra-Medium.woff') format('woff'),
+        url('../fonts/effra_font/Effra-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Gooddog-new';
+    src: url('../fonts/goodDogNew_font/gooddognew.ttf');
+    src: local('gooddog new'), local('gooddog-new'),
+        url('../fonts/goodDogNew_font/gooddognew.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}

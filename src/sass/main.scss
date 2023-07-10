@@ -1,21 +1,27 @@
-@import url('./abstracts/_normalize.css');
-@import url('./abstracts/_default.scss');
-@import url('./abstracts/_functions.scss');
-@import url('./abstracts/_mixins.scss');
-@import url('./abstracts/_varbials.scss');
+// this is abstracts styles file
+@import './abstracts/normalaize';
+@import './abstracts/varbials';
+@import './fonts';
+@import './abstracts/default';
+@import './abstracts/functions';
+@import './abstracts/mixins';
 
-@import url('./components/_buttons.scss');
+// this components styles file
+@import './components/buttons';
 
-@import url('./layout/_header.scss');
-@import url('./layout/_navigation.scss');
-@import url('./layout/_forms.scss');
-@import url('./layout/_grid.scss');
-@import url('./layout/_footer.scss');
+// this layout styles file
+@import './layout/header';
+@import './layout/navigation';
+@import './layout/grid';
+@import './layout/forms';
+@import './layout/footer';
 
-@import url('./pages/_about.scss');
-@import url('./pages/_pricing.scss');
-@import url('./pages/_solution.scss');
-@import url('./pages/_work.scss');
-@import url('./pages/_features.scss');
+// this pages styles file
+@import './pages/about';
+@import './pages/features';
+@import './pages/pricing';
+@import './pages/solution';
+@import './pages/work';
 
-@import url('./mobile/_mobile.scss');
+// this mobile styles file
+@import './mobile/mobile';

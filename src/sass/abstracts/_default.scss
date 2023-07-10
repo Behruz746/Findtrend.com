@@ -1,3 +1,66 @@
+// fonts name: 'Inter-medium', 'Inter-bold', 'Effra-bold', 'Effra-heavy', 'Effra-medium', 'Gooddog-new';
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+::-webkit-scrollbar {
+  max-width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $blackColor2;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: $firstColor;
+
+  &:hover {
+    background-color: #722ed17a;
+  }
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+
 body {
-    background-color: rgb(171, 99, 99);
+    height: 5000px;
+    background-color: #888;
+    font-family: 'Effra-bold';
+
+    h1 {
+        color: rgb(168, 187, 228);
+        font-size: 120px;
+        text-align: center;
+    }
 }

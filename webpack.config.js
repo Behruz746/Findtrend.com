@@ -13,7 +13,7 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "[name][contenthash].js",
+    filename: "js/[name][contenthash].js",
     clean: true,
   },
 
@@ -54,7 +54,6 @@ module.exports = {
         use: [
           {
             loader: "image-webpack-loader",
-
             options: {
               mozjpeg: {
                 progressive: true,
