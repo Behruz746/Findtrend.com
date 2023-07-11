@@ -32,6 +32,8 @@ import "../images/png/companies/weTransfer_logo.png";
 
 // Logos images
 import "../images/png/logos/findtrend_logo.png";
+import "../images/Ornament2.png";
+import "../images/Ornament.png";
 // import "../images/png/logos/deibbble_logo2.png";
 // import "../images/png/logos/facebook_logo2.png";
 // import "../images/png/logos/pinterest_logo2.png";

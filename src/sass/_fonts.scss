@@ -26,7 +26,7 @@
     font-family: 'Effra-bold';
     src: url('../fonts/effra_font/Effra-Bold.eot');
     src: local('Effra Bold'), local('Effra-Bold'),
-        url('../fonts/effra_font/Effra-Bold.eot') format('embedded-opentype'),
+        url('../fonts/effra_font/Effra-Bold.eot?#iefix') format('embedded-opentype'),
         url('../fonts/effra_font/Effra-Bold.woff2') format('woff2'),
         url('../fonts/effra_font/Effra-Bold.woff') format('woff'),
         url('../fonts/effra_font/Effra-Bold.ttf') format('truetype');
@@ -38,11 +38,11 @@
     font-family: 'Effra-heavy';
     src: url('../fonts/effra_font/Effra-Heavy.eot');
     src: local('Effra Heavy'), local('Effra-Heavy'),
-        url('../fonts/effra_font/Effra-Heavy.eot') format('embedded-opentype'),
+        url('../fonts/effra_font/Effra-Heavy.eot?#iefix') format('embedded-opentype'),
         url('../fonts/effra_font/Effra-Bold.woff2') format('woff2'),
         url('../fonts/effra_font/Effra-Bold.woff') format('woff'),
         url('../fonts/effra_font/Effra-Heavy.ttf') format('truetype');
-    font-weight: 300;
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -50,11 +50,11 @@
     font-family: 'Effra-medium';
     src: url('../fonts/effra_font/Effra-Medium.eot');
     src: local('Effra Medium'), local('Effra-Medium'),
-        url('../fonts/effra_font/Effra-Medium.eot') format('embedded-opentype'),
+        url('../fonts/effra_font/Effra-Medium.eot?#iefix') format('embedded-opentype'),
         url('../fonts/effra_font/Effra-Medium.woff2') format('woff2'),
         url('../fonts/effra_font/Effra-Medium.woff') format('woff'),
         url('../fonts/effra_font/Effra-Medium.ttf') format('truetype');
-    font-weight: 500;
+    font-weight: 300;
     font-style: normal;
 }
 
