@@ -1,22 +1,60 @@
 .pricing {
-    background-color: $whiteColor;
     padding: 140px 0;
 }
 
-.pricing__container {
-    max-width: 1160px;
-    width: 100%;
+.pricing__title {
+    font-family: 'Effra-heavy';
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #000;
+}   
 
-    h1 {
-        color: #000;
-        font-family: 'Effra-heavy';
-        font-size: 64px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
+.pricing__icons {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 
-        span {
-            color: #ADADAD;
+    .pricing__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 124px;
+        height: 124px;
+        border-radius: 8px;
+        background: #fff;
+        cursor: pointer;
+        transition: all .1s linear;
+
+        &:hover {
+            background-color: $firstColor;
+        }
+
+        img {
+            width: 60px;
+            height: 60px;
         }
     }
+}
+
+.pricing__btn {
+    display: block;
+    margin: 80px auto;
+    padding: 12px 32px;
+    border-radius: 40px;
+    border: 0;
+    outline: 0;
+    text-align: center;
+    font-family: 'Effra-medium';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    background-color: #000;
+    color: #FFF;
+    cursor: pointer;
 }

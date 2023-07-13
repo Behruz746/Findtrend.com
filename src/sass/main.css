@@ -426,7 +426,7 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 10px 0 10px;
-  border: 1px solid rgba(221, 0, 0, 0);
+  border: 1px solid rgb(221, 0, 0);
 }
 
 .title {
@@ -504,7 +504,7 @@ body {
   max-width: 880px;
   width: 100%;
   gap: 20px;
-  border: 1px solid rgba(221, 0, 0, 0);
+  border: 1px solid rgb(221, 0, 0);
 }
 
 .menu__list {
@@ -822,33 +822,65 @@ body {
 }
 
 .pricing {
-  background-color: #ffffff;
   padding: 140px 0;
 }
 
-.pricing__container {
-  max-width: 1160px;
-  width: 100%;
-}
-.pricing__container h1 {
-  color: #000;
+.pricing__title {
   font-family: "Effra-heavy";
+  text-align: center;
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-}
-.pricing__container h1 span {
-  color: #ADADAD;
+  color: #000;
 }
 
-.solution {
-  padding-top: 140px;
-  background-color: #ffffff;
+.pricing__icons {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.pricing__icons .pricing__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 124px;
+  height: 124px;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+.pricing__icons .pricing__icon:hover {
+  background-color: #a8ff35;
+}
+.pricing__icons .pricing__icon img {
+  width: 60px;
+  height: 60px;
+}
+
+.pricing__btn {
+  display: block;
+  margin: 80px auto;
+  padding: 12px 32px;
+  border-radius: 40px;
+  border: 0;
+  outline: 0;
+  text-align: center;
+  font-family: "Effra-medium";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  background-color: #000;
+  color: #FFF;
+  cursor: pointer;
 }
 
 .work {
-  margin-top: 140px;
+  margin: 140px 0;
 }
 
 .work__container .work__content {
