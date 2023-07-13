@@ -1,0 +1,22 @@
+.pricing {
+    background-color: $whiteColor;
+    padding: 140px 0;
+}
+
+.pricing__container {
+    max-width: 1160px;
+    width: 100%;
+
+    h1 {
+        color: #000;
+        font-family: 'Effra-heavy';
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        span {
+            color: #ADADAD;
+        }
+    }
+}
