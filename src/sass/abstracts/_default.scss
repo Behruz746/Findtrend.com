@@ -34,7 +34,7 @@ time, mark, audio, video {
 ::-webkit-scrollbar {
   max-width: 10px;
 }
-
+ 
 ::-webkit-scrollbar-track {
   background-color: $blackColor2;
 }
@@ -44,7 +44,7 @@ time, mark, audio, video {
   background-color: $firstColor;
 
   &:hover {
-    background-color: #722ed17a;
+    background-color: rgba(107, 164, 32, 0.793);
   }
 }
 
@@ -53,9 +53,10 @@ html, body {
 }
 
 body {
-  background: $whiteColor;
+  background: $blackColor;
   height: 5000px;
   font-family: 'Effra-medium';
+  color: #fff;
 }
 
 .container {
@@ -63,5 +64,5 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 10px 0 10px;
-  // border: $borderFull;
+  border: $borderFull;
 }

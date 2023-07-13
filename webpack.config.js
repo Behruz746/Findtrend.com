@@ -50,10 +50,11 @@ module.exports = {
       },
 
       { // bu imglarni mabayd larnin kichkina qilib beradi
-        test: /\.(jpe?g|png|webp|gif|svg)$/i,
+        test: /\.(jpe?g|png|webp|gif|svg|mp3)$/i,
         use: [
           {
             loader: "image-webpack-loader",
+
             options: {
               mozjpeg: {
                 progressive: true,
@@ -76,6 +77,7 @@ module.exports = {
             },
           },
         ],
+
         type: "asset/resource",
         generator: {
           filename: "images/[name][ext]",

@@ -9,7 +9,7 @@
     font-weight: 500;
     font-style: normal;
 }
-
+ 
 @font-face {
     font-family: 'Inter-bold';
     src: url('../fonts/inter_font/Inter-Bold.eot');
@@ -19,6 +19,18 @@
         url('../fonts/inter_font/Inter-Bold.woff') format('woff'),
         url('../fonts/inter_font/Inter-Bold.ttf') format('truetype');
     font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-regular';
+    src: url('../fonts/roboto_font/RobotoCondensed-Regular.eot');
+    src: local('Roboto regular'), local('Roboto-regular'),
+        url('../fonts/roboto_font/RobotoCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/roboto_font/RobotoCondensed-Regular.woff2') format('woff2'),
+        url('../fonts/roboto_font/RobotoCondensed-Regular.woff') format('woff'),
+        url('../fonts/roboto_font/RobotoCondensed-Regular.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -66,4 +78,12 @@
         url('../fonts/goodDogNew_font/gooddognew.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Effra Medium';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Effra Medium'), url('../fonts/effra-heavy-cufonfonts-webfont/Effra\ Medium.woff') format('woff');
 }
