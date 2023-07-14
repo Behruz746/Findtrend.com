@@ -121,12 +121,10 @@
             font-family: 'Effra-heavy';
             font-size: 18px;
             line-height: 100%;
-
             transition: .2s linear;
 
             &:hover {
                 background-color: $firstColor;
-                color: $whiteColor;
             }
         }
     }

@@ -58,3 +58,17 @@
     color: #FFF;
     cursor: pointer;
 }
+
+.pricing__content {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    margin-top: calc(77px - 40px);
+
+    img {
+        max-width: 800px;
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+    }
+}

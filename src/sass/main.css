@@ -426,7 +426,13 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 10px 0 10px;
-  border: 1px solid rgb(221, 0, 0);
+  border: 1px solid rgba(221, 0, 0, 0);
+}
+
+.dis--hidden {
+  display: none !important;
+  z-index: -100;
+  background-color: transparent;
 }
 
 .title {
@@ -504,7 +510,7 @@ body {
   max-width: 880px;
   width: 100%;
   gap: 20px;
-  border: 1px solid rgb(221, 0, 0);
+  border: 1px solid rgba(221, 0, 0, 0);
 }
 
 .menu__list {
@@ -553,7 +559,6 @@ body {
 }
 .menu__btns a:nth-child(2):hover {
   background-color: #a8ff35;
-  color: #ffffff;
 }
 
 .about__container {
@@ -877,6 +882,19 @@ body {
   background-color: #000;
   color: #FFF;
   cursor: pointer;
+}
+
+.pricing__content {
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+  margin-top: 37px;
+}
+.pricing__content img {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
 }
 
 .work {
