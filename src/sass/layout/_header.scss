@@ -64,72 +64,6 @@
     }
 }
 
-.header__nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 880px;
-    width: 100%;
-    gap: 20px;
-    border: $borderFull;
-}
-
-.menu__list {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-
-    a {
-        color: $whiteColor;
-        text-align: center;
-        font-family: 'Effra Medium';
-        font-size: 18px;
-        line-height: 100%;
-        transition: color .2s linear;
-
-        &:hover {
-            color: $firstColor;
-        }
-    }
-}
-
-.menu__btns {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-
-    a {
-        &:nth-child(1) {
-            color: #FFF;
-            text-align: center;
-            font-family: 'Effra-heavy';
-            font-size: 18px;
-            line-height: 100%;
-            transition: color .2s linear;
-
-            &:hover {
-                color: $firstColor;
-            }
-        }
-
-        &:nth-child(2) {
-            padding: 12px 32px;
-            border-radius: 40px;
-            background-color: $whiteColor;
-            color: #000;
-            text-align: center;
-            font-family: 'Effra-heavy';
-            font-size: 18px;
-            line-height: 100%;
-            transition: .2s linear;
-
-            &:hover {
-                background-color: $firstColor;
-            }
-        }
-    }
-}
-
 
 .about__container {
     display: flex;
@@ -173,13 +107,22 @@
         width: 180px;
         height: 57px;
         border-radius: 40px;
-        text-align: center;
-        font-family: 'Effra-medium';
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 140%;
         background-color: $firstColor;
-        color: #000;
+       
+        p {
+            text-align: center;
+            font-family: 'Effra-medium';
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 140%;
+            color: #000;
+        }
+
+        img {
+            margin: 0 0 5px 5px;
+            width: 20px;
+            height: auto;
+        }
     }
 }
 

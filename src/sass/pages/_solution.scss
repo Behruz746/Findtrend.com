@@ -1,0 +1,191 @@
+.solution {
+    padding: 140px 0;
+    background-color: $blackColor;
+}
+
+.solution__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.solution__content {
+    width: 100%;
+
+    h1 {
+        color: #FFF;
+        text-align: center;
+        font-family: 'Effra-heavy';
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700 !important;
+        line-height: normal;
+    }
+}
+
+.solution__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 450px;
+    margin: 40px auto;
+    position: relative;
+
+    h3 {
+        font-family: 'Inter-medium';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        color: #fff;
+
+        &:nth-child(3) {
+            opacity: 0.5;
+        }
+    }
+
+    .header__arrow {
+        position: absolute;
+        top: -20%;
+        right: -50px;
+        // transform: translateX(-50%);
+    }
+}
+
+.check--box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 104px;
+    height: 52px;
+    padding: 0 6px;
+    background-color: #fff;
+    border-radius: 99px;
+    cursor: pointer;
+    transition: .2s linear;
+
+    .toggle {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: $firstColor;
+    }
+
+    &:hover {
+        .toggle {
+            background-color: $greenColor2;
+        }
+    }
+}
+
+.solution__cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.solution__card {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 640px;
+    background-color: #fafafa;
+    padding: 32px;
+    border-radius: 16px;
+    color: #000;
+    position: relative;
+
+    .card__title {
+        font-family: 'Effra Medium';
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 36px */
+        color: #000;
+    }
+
+    .card__subtitle {
+        margin-top: 8px;
+        font-family: 'Effra Medium';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        color: #000;
+    }
+
+    hr {
+        max-width: 296px;
+        width: 100%;
+        height: 1px;
+        margin-top: 32px;
+        border: 0;
+        outline: 0;
+        background-color: #000;
+    }
+
+    .card__price {
+        margin-top: 32px;
+        font-family: 'Effra Medium';
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        color: #000;
+
+        span {
+            font-size: 18px;
+            margin-left: 8px;
+        }
+    }
+
+    ul {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #000;
+            font-family: 'Effra-medium';
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%;
+        }
+    }
+
+    .card__btn {
+        width: 296px;
+        height: 58px;
+        border: 0;
+        outline: 0;
+        border-radius: 29px;
+        text-align: center;
+        font-family: 'Effra-heavy';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%; 
+        color: #000;
+        background: #A8FF35;
+        cursor: pointer;
+        position: absolute;
+        bottom: 24px;
+    }
+}
+
+.card--dark {
+    background-color: $firstColor !important;
+
+    .card__btn {
+        background: #000;
+        color: #fff;
+    }
+}

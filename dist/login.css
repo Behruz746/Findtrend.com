@@ -506,64 +506,6 @@ body {
   line-height: 100%;
 }
 
-.header__nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 880px;
-  width: 100%;
-  gap: 20px;
-  border: 1px solid rgba(221, 0, 0, 0);
-}
-
-.menu__list {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-}
-.menu__list a {
-  color: #ffffff;
-  text-align: center;
-  font-family: "Effra Medium";
-  font-size: 18px;
-  line-height: 100%;
-  transition: color 0.2s linear;
-}
-.menu__list a:hover {
-  color: #a8ff35;
-}
-
-.menu__btns {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-.menu__btns a:nth-child(1) {
-  color: #FFF;
-  text-align: center;
-  font-family: "Effra-heavy";
-  font-size: 18px;
-  line-height: 100%;
-  transition: color 0.2s linear;
-}
-.menu__btns a:nth-child(1):hover {
-  color: #a8ff35;
-}
-.menu__btns a:nth-child(2) {
-  padding: 12px 32px;
-  border-radius: 40px;
-  background-color: #ffffff;
-  color: #000;
-  text-align: center;
-  font-family: "Effra-heavy";
-  font-size: 18px;
-  line-height: 100%;
-  transition: 0.2s linear;
-}
-.menu__btns a:nth-child(2):hover {
-  background-color: #a8ff35;
-}
-
 .about__container {
   display: flex;
   flex-direction: column;
@@ -604,13 +546,20 @@ body {
   width: 180px;
   height: 57px;
   border-radius: 40px;
+  background-color: #a8ff35;
+}
+.header__btn a p {
   text-align: center;
   font-family: "Effra-medium";
   font-size: 18px;
   font-weight: 700;
   line-height: 140%;
-  background-color: #a8ff35;
   color: #000;
+}
+.header__btn a img {
+  margin: 0 0 5px 5px;
+  width: 20px;
+  height: auto;
 }
 
 .header__arrow p {
@@ -718,6 +667,64 @@ body {
 
 .menu__burger {
   display: none;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 880px;
+  width: 100%;
+  gap: 20px;
+  border: 1px solid rgba(221, 0, 0, 0);
+}
+
+.menu__list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.menu__list a {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Effra Medium";
+  font-size: 18px;
+  line-height: 100%;
+  transition: color 0.2s linear;
+}
+.menu__list a:hover {
+  color: #a8ff35;
+}
+
+.menu__btns {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.menu__btns a:nth-child(1) {
+  color: #FFF;
+  text-align: center;
+  font-family: "Effra-heavy";
+  font-size: 18px;
+  line-height: 100%;
+  transition: color 0.2s linear;
+}
+.menu__btns a:nth-child(1):hover {
+  color: #a8ff35;
+}
+.menu__btns a:nth-child(2) {
+  padding: 12px 32px;
+  border-radius: 40px;
+  background-color: #ffffff;
+  color: #000;
+  text-align: center;
+  font-family: "Effra-heavy";
+  font-size: 18px;
+  line-height: 100%;
+  transition: 0.2s linear;
+}
+.menu__btns a:nth-child(2):hover {
+  background-color: #a8ff35;
 }
 
 .grid {
@@ -885,6 +892,11 @@ body {
   background-color: #000;
   color: #FFF;
   cursor: pointer;
+  transition: all 0.2s linear;
+}
+.pricing__btn:hover {
+  background-color: #a8ff35;
+  color: #2b2b2b;
 }
 
 .pricing__content {
@@ -898,6 +910,180 @@ body {
   width: 100%;
   height: auto;
   margin-top: 40px;
+}
+
+.solution {
+  padding: 140px 0;
+  background-color: #020202;
+}
+
+.solution__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.solution__content {
+  width: 100%;
+}
+.solution__content h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Effra-heavy";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: normal;
+}
+
+.solution__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 450px;
+  margin: 40px auto;
+  position: relative;
+}
+.solution__box h3 {
+  font-family: "Inter-medium";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #fff;
+}
+.solution__box h3:nth-child(3) {
+  opacity: 0.5;
+}
+.solution__box .header__arrow {
+  position: absolute;
+  top: -20%;
+  right: -50px;
+}
+
+.check--box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 104px;
+  height: 52px;
+  padding: 0 6px;
+  background-color: #fff;
+  border-radius: 99px;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+.check--box .toggle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #a8ff35;
+}
+.check--box:hover .toggle {
+  background-color: #8cc83a;
+}
+
+.solution__cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.solution__card {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 640px;
+  background-color: #fafafa;
+  padding: 32px;
+  border-radius: 16px;
+  color: #000;
+  position: relative;
+}
+.solution__card .card__title {
+  font-family: "Effra Medium";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 36px */
+  color: #000;
+}
+.solution__card .card__subtitle {
+  margin-top: 8px;
+  font-family: "Effra Medium";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  color: #000;
+}
+.solution__card hr {
+  max-width: 296px;
+  width: 100%;
+  height: 1px;
+  margin-top: 32px;
+  border: 0;
+  outline: 0;
+  background-color: #000;
+}
+.solution__card .card__price {
+  margin-top: 32px;
+  font-family: "Effra Medium";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  color: #000;
+}
+.solution__card .card__price span {
+  font-size: 18px;
+  margin-left: 8px;
+}
+.solution__card ul {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.solution__card ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #000;
+  font-family: "Effra-medium";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+.solution__card .card__btn {
+  width: 296px;
+  height: 58px;
+  border: 0;
+  outline: 0;
+  border-radius: 29px;
+  text-align: center;
+  font-family: "Effra-heavy";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  color: #000;
+  background: #A8FF35;
+  cursor: pointer;
+  position: absolute;
+  bottom: 24px;
+}
+
+.card--dark {
+  background-color: #a8ff35 !important;
+}
+.card--dark .card__btn {
+  background: #000;
+  color: #fff;
 }
 
 .work {
