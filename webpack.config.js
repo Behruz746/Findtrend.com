@@ -2,6 +2,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+// const PugPlugin = require('pug-plugin');
 
 module.exports = {
   mode: "development", // production
@@ -9,6 +10,7 @@ module.exports = {
   entry: {
     main: path.resolve(__dirname, "src/js/main.js"),
     login: path.resolve(__dirname, "src/js/login.js"),
+    // index: './src/indexTemp.html',
   },
 
   output: {
@@ -35,6 +37,11 @@ module.exports = {
         test: /\.s|css$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
+
+      // {
+      //   test: /\.pug$/,
+      //   loader: PugPlugin.loader, // PugPlugin already contain the pug-loader
+      // },
 
       {
         test: /\.(?:js|mjs|cjs)$/,

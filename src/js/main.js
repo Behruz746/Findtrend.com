@@ -3,8 +3,8 @@ import "./export";
 import "../sass/main.css";
 import "../sass/_fonts.scss";
 
-// const headerBtn = document.querySelector(".header__btn a");
-const audioFire = document.querySelector(".audio--fire");
+const headerBtn = document.querySelector(".header__btn a");
+const audioFire = document.querySelector("#audio--fire");
 
 const svg = document.querySelectorAll(".btn__svg");
 const listItem = document.querySelectorAll(".list__item");
@@ -13,30 +13,19 @@ const audio = document.querySelector(".audio");
 const pricingContent = document.querySelector(".pricing__content");
 const pricingIcons = document.querySelectorAll(".pricing__icon");
 
-let i = 1;
-audioFire.play();
+const checkBox = document.querySelector(".check--box");
+const card__price = document.querySelectorAll(".card__price");
 
-window.addEventListener("scroll", () => {
-  // value += 0.01;
-  // console.log(window.scrollY);
-  // audioFire.loop = true;
-  // audioFire.volume = value;
+audioFire.loop = true;
+audioFire.volume = 0.3;
 
-  if(window.scrollY >= 800) {
-    i -= 0.1;
-    audioFire.volume = 0;
-  } else if(window.scrollY <= 800) {
-    i += 0.1;
-    audioFire.volume = 1;
-  }
+headerBtn.addEventListener("mouseover", () => {
+  audioFire.play();
 });
 
-// headerBtn.addEventListener('mouseover', ()=> {
-// });
-
-// headerBtn.addEventListener('mouseout', ()=> {
-//   audioFire.pause();
-// });
+headerBtn.addEventListener("mouseout", () => {
+  audioFire.pause();
+});
 
 svg.forEach((i, index) => i.addEventListener("click", () => {
   listItem.forEach((item, id) => {
@@ -97,4 +86,40 @@ pricingIcons.forEach((i, index) => {
         break;
     }
   });
+});
+
+let TF = false;
+
+function getDate(data) {
+  card__price.forEach((item, index) => {
+    if (data) {
+      if (index === 0) {
+        item.innerHTML = "$16<span>/Year</span>";
+      } else if (index === 1) {
+        item.innerHTML = "$40<span>/Year</span>";
+      } else if (index === 2) {
+        item.innerHTML = "$96<span>/Year</span>";
+      }
+    } else if (!data) {
+      if (index === 0) {
+        item.innerHTML = "$8<span>/Month</span>";
+      } else if (index === 1) {
+        item.innerHTML = "$20<span>/Month</span>";
+      } else if (index === 2) {
+        item.innerHTML = "$48<span>/Month</span>";
+      }
+    }
+  });
+}
+
+checkBox.addEventListener("click", () => {
+  if (!TF) {
+    getDate(false);
+    checkBox.style.justifyContent = "flex-end";
+    TF = true;
+  } else if (TF) {
+    getDate(true);
+    checkBox.style.justifyContent = "flex-start";
+    TF = false;
+  }
 });
