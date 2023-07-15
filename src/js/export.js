@@ -40,6 +40,7 @@ import "../audio/click.mp3";
 import "../images/tweet01.png";
 import "../images/tweetr02.png";
 import "../images/fire.gif";
+import "../audio/fire.mp3";
 // import "../images/png/logos/deibbble_logo2.png";
 // import "../images/png/logos/facebook_logo2.png";
 // import "../images/png/logos/pinterest_logo2.png";

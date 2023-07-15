@@ -3,12 +3,40 @@ import "./export";
 import "../sass/main.css";
 import "../sass/_fonts.scss";
 
+// const headerBtn = document.querySelector(".header__btn a");
+const audioFire = document.querySelector(".audio--fire");
+
 const svg = document.querySelectorAll(".btn__svg");
 const listItem = document.querySelectorAll(".list__item");
 const audio = document.querySelector(".audio");
 
 const pricingContent = document.querySelector(".pricing__content");
 const pricingIcons = document.querySelectorAll(".pricing__icon");
+
+let i = 1;
+audioFire.play();
+
+window.addEventListener("scroll", () => {
+  // value += 0.01;
+  // console.log(window.scrollY);
+  // audioFire.loop = true;
+  // audioFire.volume = value;
+
+  if(window.scrollY >= 800) {
+    i -= 0.1;
+    audioFire.volume = 0;
+  } else if(window.scrollY <= 800) {
+    i += 0.1;
+    audioFire.volume = 1;
+  }
+});
+
+// headerBtn.addEventListener('mouseover', ()=> {
+// });
+
+// headerBtn.addEventListener('mouseout', ()=> {
+//   audioFire.pause();
+// });
 
 svg.forEach((i, index) => i.addEventListener("click", () => {
   listItem.forEach((item, id) => {
