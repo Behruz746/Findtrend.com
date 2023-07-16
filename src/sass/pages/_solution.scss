@@ -40,18 +40,17 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        color: #fff;
+        color: #fff;       
+    }
 
-        &:nth-child(3) {
-            opacity: 0.5;
-        }
+    .opcity-child {
+        opacity: 0.5;
     }
 
     .header__arrow {
         position: absolute;
         top: -20%;
         right: -50px;
-        // transform: translateX(-50%);
     }
 }
 

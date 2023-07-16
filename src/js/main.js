@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 /* eslint-disable import/no-unresolved */
 import "./export";
 import "../sass/main.css";
@@ -14,7 +15,9 @@ const pricingContent = document.querySelector(".pricing__content");
 const pricingIcons = document.querySelectorAll(".pricing__icon");
 
 const checkBox = document.querySelector(".check--box");
-const card__price = document.querySelectorAll(".card__price");
+const cardPrice = document.querySelectorAll(".card__price");
+const solutionMonth = document.querySelector(".solution__month");
+const solutionYear = document.querySelector(".solution__year");
 
 audioFire.loop = true;
 audioFire.volume = 0.3;
@@ -90,35 +93,29 @@ pricingIcons.forEach((i, index) => {
 
 let TF = false;
 
-function getDate(data) {
-  card__price.forEach((item, index) => {
-    if (data) {
-      if (index === 0) {
-        item.innerHTML = "$16<span>/Year</span>";
-      } else if (index === 1) {
-        item.innerHTML = "$40<span>/Year</span>";
-      } else if (index === 2) {
-        item.innerHTML = "$96<span>/Year</span>";
-      }
-    } else if (!data) {
-      if (index === 0) {
-        item.innerHTML = "$8<span>/Month</span>";
-      } else if (index === 1) {
-        item.innerHTML = "$20<span>/Month</span>";
-      } else if (index === 2) {
-        item.innerHTML = "$48<span>/Month</span>";
-      }
+function getDate(data1, data2, data3, date) {
+  cardPrice.forEach((item, index) => {
+    if (index === 0) {
+      item.innerHTML = `$${data1}<span>/${date}</span>`;
+    } else if (index === 1) {
+      item.innerHTML = `$${data2}<span>/${date}</span>`;
+    } else {
+      item.innerHTML = `$${data3}<span>/${date}</span>`;
     }
   });
 }
 
 checkBox.addEventListener("click", () => {
   if (!TF) {
-    getDate(false);
+    getDate(16, 40, 96, "Year");
+    solutionMonth.classList.add("opcity-child");
+    solutionYear.classList.remove("opcity-child");
     checkBox.style.justifyContent = "flex-end";
     TF = true;
   } else if (TF) {
-    getDate(true);
+    getDate(8, 20, 48, "Month");
+    solutionMonth.classList.remove("opcity-child");
+    solutionYear.classList.add("opcity-child");
     checkBox.style.justifyContent = "flex-start";
     TF = false;
   }
